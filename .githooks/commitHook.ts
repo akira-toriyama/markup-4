@@ -23,8 +23,6 @@ const scopeQ = () =>
     options: [
       { name: "_", value: "_" },
       line,
-      { name: "Item", value: "Item" },
-      { name: "Items", value: "Items" },
     ],
   });
 

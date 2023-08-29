@@ -1,12 +1,6 @@
 import type { NextPage } from "next";
-import NextLink from "next/link";
+import { Main } from "~/ui/domain/Main";
 
-const Page: NextPage = () => (
-  <ul>
-    <li>
-      <NextLink href="/items">items</NextLink>
-    </li>
-  </ul>
-);
+const Page: NextPage = () => <Main />;
 
 export default Page;

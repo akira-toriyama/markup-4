@@ -1,16 +1,17 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
 
-export default class MyDocument extends Document {
+class MyDocument extends Document {
   render() {
     return (
       <Html lang="ja">
         <Head>
           <meta charSet="UTF-8" />
+
           <link
             href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
             rel="stylesheet"
           />
-          <link rel="icon" href="favicon.ico" type="image/svg+xml" />
+          <link rel="icon" href="favicon.png" type="image/png" />
         </Head>
         <body>
           <Main />
@@ -20,3 +21,5 @@ export default class MyDocument extends Document {
     );
   }
 }
+
+export default MyDocument;

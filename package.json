@@ -1,5 +1,5 @@
 {
-  "name": "next-tpl",
+  "name": "markup-4",
   "license": "MIT",
   "scripts": {
     "// develop": "",
@@ -10,7 +10,7 @@
     "generate:GQLType": "graphql-codegen --config codegen.ts",
     "generate:StyleType": "typed-scss-modules src",
     "// util": "",
-    "downloadSchema": "pnpm run --silent get-graphql-schema ${SCHEMA_DOWNLOAD_URL} > _server/graphqlServer/schema.graphql",
+    "downloadSchema": "pnpm get-graphql-schema ${SCHEMA_DOWNLOAD_URL} > _server/graphqlServer/schema.graphql",
     "designSystem": "pnpm ladle serve",
     "mockServer": "pnpm run downloadSchema && ts-node-dev --project _server/graphqlServer/tsconfig.json --respawn --transpile-only _server/graphqlServer/graphqlServer.ts",
     "_updateSnapshot": "pnpm && start-server-and-test _qualityCheck:snapshotTest 61000 'pnpm playwright test snapshot/snapshot.test.ts -u'",

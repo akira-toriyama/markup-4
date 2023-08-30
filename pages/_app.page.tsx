@@ -9,7 +9,7 @@ type Props = AppProps<{ dehydratedState: unknown }>;
 const Page: NextPage<Props> = (props) => (
   <>
     <Head>
-      <meta name="viewport" content="width=device-width" />
+      <meta name="viewport" content="width=device-width initial-scale=1.0" />
     </Head>
     <NextNProgress />
     <Wrapper {...props.pageProps}>

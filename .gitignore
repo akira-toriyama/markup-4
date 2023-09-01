@@ -45,3 +45,7 @@ _server/graphqlServer/schema.graphql
 /test-results
 
 /public/mockServiceWorker.js
+
+# https://github.com/mizdra/happy-css-modules
+/src/**/*.module.scss.d.ts.map
+/src/**/*.module.scss.d.ts

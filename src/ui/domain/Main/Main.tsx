@@ -1,8 +1,8 @@
-import * as s from "./main.module.scss";
+import styles from "./main.module.scss";
 
 export const Main: React.FC = () => (
   <>
-    <header className={s.header}></header>
+    <header className={styles.header}>h</header>
     <main>m</main>
     <footer></footer>
   </>

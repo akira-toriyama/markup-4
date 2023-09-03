@@ -1,3 +1,142 @@
 .header {
-  display: flex;
+  /* */
+  &Logo {
+    /* */
+    &Title {
+      /* */
+    }
+  }
+
+  &Nav {
+    /* */
+    &Menu {
+      /* */
+      &Item {
+        /* */
+      }
+    }
+  }
+}
+
+.main {
+  /* */
+  &Hero {
+    /* */
+    &Highlight {
+      /* */
+      &Links {
+        /* */
+      }
+    }
+
+    &Img {
+      /* */
+      &--primary {
+        /* */
+      }
+
+      &--secondary {
+        /* */
+      }
+    }
+  }
+
+  &Works {
+    /* */
+    &Item {
+      /* */
+      &Img {
+        /* */
+      }
+
+      &Text {
+        /* */
+      }
+    }
+  }
+
+  &About {
+    /* */
+    &Img {
+      /* */
+    }
+
+    &Description {
+      /* */
+    }
+
+    &Addition {
+      /* */
+      &Skills {
+        /* */
+      }
+
+      &Follow {
+        /* */
+      }
+    }
+  }
+}
+
+.footer {
+  /* */
+  &Form {
+    /* */
+    &Input {
+      /* */
+    }
+
+    &TextArea {
+      /* */
+    }
+  }
+
+  &Info {
+    /* */
+    &Nav {
+      /* */
+      &Menu {
+        /* */
+      }
+    }
+
+    &Follow {
+      /* */
+    }
+
+    &Copy {
+      /* */
+    }
+  }
+}
+
+.container {
+  /* */
+}
+
+.socialLinks {
+  /* */
+}
+
+.button {
+  /* */
+  &--primary {
+    /* */
+  }
+
+  &--secondary {
+    /* */
+  }
+}
+
+.mobile {
+  /* */
+}
+
+.tabletAndUp {
+  /* */
+}
+
+.socialLinks {
+  /* */
 }

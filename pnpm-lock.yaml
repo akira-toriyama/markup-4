@@ -287,16 +287,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
-  /@babel/generator@7.22.10:
-    resolution: {integrity: sha512-79KIf7YiWjjdZ81JnLujDRApWtl7BxTqWD88+FFdQEIOG8LJ0etDOM7CXuIgGJa55sGOwZVwuEsaLEm0PJ5/+A==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/types': 7.22.15
-      '@jridgewell/gen-mapping': 0.3.3
-      '@jridgewell/trace-mapping': 0.3.19
-      jsesc: 2.5.2
-    dev: true
-
   /@babel/generator@7.22.15:
     resolution: {integrity: sha512-Zu9oWARBqeVOW0dZOjXc3JObrzuqothQ3y/n1kUtrjCoCPLkXUwMvOo/F/TCfoHMbWIFlWwpZtkZVb9ga4U2pA==}
     engines: {node: '>=6.9.0'}
@@ -1272,7 +1262,7 @@ packages:
       '@parcel/watcher':
         optional: true
     dependencies:
-      '@babel/generator': 7.22.10
+      '@babel/generator': 7.22.15
       '@babel/template': 7.22.15
       '@babel/types': 7.22.15
       '@graphql-codegen/core': 4.0.0(graphql@16.8.0)
@@ -2098,7 +2088,7 @@ packages:
     dependencies:
       '@babel/code-frame': 7.22.10
       '@babel/core': 7.22.11
-      '@babel/generator': 7.22.10
+      '@babel/generator': 7.22.15
       '@babel/parser': 7.22.15
       '@babel/template': 7.22.15
       '@babel/traverse': 7.22.15

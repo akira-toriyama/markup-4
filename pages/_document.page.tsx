@@ -6,11 +6,6 @@ class MyDocument extends Document {
       <Html lang="ja">
         <Head>
           <meta charSet="UTF-8" />
-
-          <link
-            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
-            rel="stylesheet"
-          />
           <link rel="icon" href="favicon.png" type="image/png" />
         </Head>
         <body>

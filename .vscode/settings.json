@@ -6,5 +6,7 @@
     "source.fixAll.eslint",
     "source.fixAll.stylelint"
   ],
-  "stylelint.validate": ["scss"]
+  "stylelint.validate": ["scss"],
+  // https://zenn.dev/teppeis/scraps/c093e386614fb8
+  "prettier.trailingComma": null
 }

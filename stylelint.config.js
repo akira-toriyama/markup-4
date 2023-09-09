@@ -1,5 +1,9 @@
 /** @type {import('stylelint').Config} */
 module.exports = {
-  extends: "stylelint-config-standard-scss",
+  plugins: ["stylelint-prettier"],
   customSyntax: "postcss-scss",
+  extends: ["stylelint-config-standard", "stylelint-config-css-modules"],
+  rules: {
+    "selector-class-pattern": null,
+  },
 };

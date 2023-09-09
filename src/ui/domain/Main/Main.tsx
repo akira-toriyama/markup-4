@@ -243,7 +243,7 @@ export const Main: React.FC = () => (
                 src={"/image-work-a3.jpg"}
                 className={clsx(
                   styles.mainWorksItemImgInner,
-                  styles["mainWorksItemImg--primary"]
+                  styles["mainWorksItemImg--primary"],
                 )}
               />
             </figure>
@@ -274,7 +274,7 @@ export const Main: React.FC = () => (
                 src={"/image-work-b.jpg"}
                 className={clsx(
                   styles.mainWorksItemImgInner,
-                  styles["mainWorksItemImg--secondary"]
+                  styles["mainWorksItemImg--secondary"],
                 )}
               />
             </figure>

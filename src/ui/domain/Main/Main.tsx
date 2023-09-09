@@ -22,8 +22,7 @@ export const Main: React.FC = () => (
   <>
     <header className={styles.header}>
       <div className={styles.headerLogo}>
-        {/* TODO next img */}
-        {/* <img class="header-logo-img" src="images/image-logo.svg" alt="logo"> */}
+        <NextImg width={40} height={24.86} src="/image-logo.svg" alt="logo" />
         <span className={styles.headerLogoTitle}>Designer/Developer</span>
       </div>
       <div className={styles.headerNav}>
@@ -49,7 +48,7 @@ export const Main: React.FC = () => (
         <div className={styles.container}>
           <div className={styles.mainHeroHighlight}>
             <h1>
-              I'm <strong>Elle Kasai</strong>, a
+              I&apos;m <strong>Elle Kasai</strong>, a
               <strong>designer/developer</strong> based in Vancouver, Canada.
             </h1>
 
@@ -71,42 +70,42 @@ export const Main: React.FC = () => (
               <li>
                 {/* TODO next link */}
                 <a href="" target="_blank">
-                  <FontAwesomeIcon icon={faGithub} />
+                  <FontAwesomeIcon color="white" size="sm" icon={faGithub} />
                 </a>
               </li>
               <li>
                 {/* TODO next link */}
                 <a href="" target="_blank">
-                  <FontAwesomeIcon icon={faDribbble} />
+                  <FontAwesomeIcon color="white" size="sm" icon={faDribbble} />
                 </a>
               </li>
               <li>
                 {/* TODO next link */}
                 <a href="" target="_blank">
-                  <FontAwesomeIcon icon={faLinkedin} />
+                  <FontAwesomeIcon color="white" size="sm" icon={faLinkedin} />
                 </a>
               </li>
               <li>
                 {/* TODO next link */}
                 <a href="" target="_blank">
-                  <FontAwesomeIcon icon={faMedium} />
+                  <FontAwesomeIcon color="white" size="sm" icon={faMedium} />
                 </a>
               </li>
               <li>
                 {/* TODO next link */}
                 <a href="" target="_blank">
-                  <FontAwesomeIcon icon={faTwitter} />
+                  <FontAwesomeIcon color="white" size="sm" icon={faTwitter} />
                 </a>
               </li>
               <li>
                 {/* TODO next link */}
                 <a href="" target="_blank">
-                  <FontAwesomeIcon icon={faYoutube} />
+                  <FontAwesomeIcon color="white" size="sm" icon={faYoutube} />
                 </a>
               </li>
             </ul>
           </div>
-          <figure className={styles.mainHeroImg}>
+          <figure>
             <NextImg
               src="/akira-toriyama.jpg"
               alt="profile"
@@ -136,6 +135,7 @@ export const Main: React.FC = () => (
             className={styles.tabletAndUp}
           />
         </figure>
+
         <div className={styles.container}>
           <div className={styles.mainAboutDescription}>
             <h3>自己紹介</h3>
@@ -172,37 +172,55 @@ export const Main: React.FC = () => (
                 <li>
                   {/* TODO NextLink */}
                   <a href="" target="_blank">
-                    <FontAwesomeIcon icon={faGithub} />
+                    <FontAwesomeIcon
+                      className={styles.mainAboutAdditionFollowIcon}
+                      icon={faGithub}
+                    />
                   </a>
                 </li>
                 <li>
                   {/* TODO NextLink */}
                   <a href="" target="_blank">
-                    <FontAwesomeIcon icon={faDribbble} />
+                    <FontAwesomeIcon
+                      className={styles.mainAboutAdditionFollowIcon}
+                      icon={faDribbble}
+                    />
                   </a>
                 </li>
                 <li>
                   {/* TODO NextLink */}
                   <a href="" target="_blank">
-                    <FontAwesomeIcon icon={faLinkedin} />
+                    <FontAwesomeIcon
+                      className={styles.mainAboutAdditionFollowIcon}
+                      icon={faLinkedin}
+                    />
                   </a>
                 </li>
                 <li>
                   {/* TODO NextLink */}
                   <a href="" target="_blank">
-                    <FontAwesomeIcon icon={faMedium} />
+                    <FontAwesomeIcon
+                      className={styles.mainAboutAdditionFollowIcon}
+                      icon={faMedium}
+                    />
                   </a>
                 </li>
                 <li>
                   {/* TODO NextLink */}
                   <a href="" target="_blank">
-                    <FontAwesomeIcon icon={faYoutube} />
+                    <FontAwesomeIcon
+                      className={styles.mainAboutAdditionFollowIcon}
+                      icon={faYoutube}
+                    />
                   </a>
                 </li>
                 <li>
                   {/* TODO NextLink */}
                   <a href="" target="_blank">
-                    <FontAwesomeIcon icon={faTwitter} />
+                    <FontAwesomeIcon
+                      className={styles.mainAboutAdditionFollowIcon}
+                      icon={faTwitter}
+                    />
                   </a>
                 </li>
               </ul>
@@ -217,19 +235,19 @@ export const Main: React.FC = () => (
         </h2>
         <div className={styles.container}>
           <div className={styles.mainWorksItem}>
-            <figure
-              className={clsx(
-                styles.mainWorksItemImg,
-                styles["mainHeroImg--primary"]
-              )}
-            >
+            <figure className={styles.mainWorksItemImg}>
               <NextImg
                 alt="Work A"
                 width={345}
                 height={230}
                 src={"/image-work-a3.jpg"}
+                className={clsx(
+                  styles.mainWorksItemImgInner,
+                  styles["mainWorksItemImg--primary"]
+                )}
               />
             </figure>
+
             <div className={styles.mainWorksItemText}>
               <h3>過去のお仕事 1</h3>
               <p>
@@ -248,17 +266,16 @@ export const Main: React.FC = () => (
             </div>
           </div>
           <div className={styles.mainWorksItem}>
-            <figure
-              className={clsx(
-                styles.mainWorksItemImg,
-                styles["mainHeroImg--secondary"]
-              )}
-            >
+            <figure className={styles.mainWorksItemImg}>
               <NextImg
                 alt="Work B"
                 width={345}
                 height={230}
                 src={"/image-work-b.jpg"}
+                className={clsx(
+                  styles.mainWorksItemImgInner,
+                  styles["mainWorksItemImg--secondary"]
+                )}
               />
             </figure>
             <div className={styles.mainWorksItemText}>
@@ -288,13 +305,21 @@ export const Main: React.FC = () => (
           <p>お仕事のご依頼やご相談等､お問い合わせはこちらからどうぞ｡</p>
           <form>
             <div className={styles.footerFormInput}>
-              <FontAwesomeIcon icon={faUser} />
+              <FontAwesomeIcon
+                className={styles.footerFormInputIcon}
+                icon={faUser}
+              />
               <input type="text" placeholder="氏名" />
             </div>
+
             <div className={styles.footerFormInput}>
-              <FontAwesomeIcon icon={faEnvelope} />
+              <FontAwesomeIcon
+                className={styles.footerFormInputIcon}
+                icon={faEnvelope}
+              />
               <input type="email" placeholder="メールアドレス" />
             </div>
+
             <div className={styles.footerFormTextArea}>
               <textarea placeholder="お問い合わせ内容"></textarea>
             </div>

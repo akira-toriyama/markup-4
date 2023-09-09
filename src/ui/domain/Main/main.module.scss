@@ -1,7 +1,17 @@
 .header {
-  /* */
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #6b4e71;
+  position: fixed;
+  z-index: 2;
+
   &Logo {
-    /* */
+    display: flex;
+    align-items: center;
+
     &Title {
       /* */
     }
@@ -10,9 +20,18 @@
   &Nav {
     /* */
     &Menu {
+      display: flex;
+
       /* */
       &Item {
-        /* */
+        > a {
+          color: #fff7f7;
+
+          &:hover,
+          &:focus {
+            color: #ffc4c4;
+          }
+        }
       }
     }
   }
@@ -21,32 +40,56 @@
 .main {
   /* */
   &Hero {
-    /* */
+    background-color: #6b4e71;
+
     &Highlight {
-      /* */
+      color: #fff7f7;
+
       &Links {
-        /* */
-      }
-    }
+        /* stylelint-disable-next-line no-descending-specificity */
+        a {
+          color: #fff7f7;
+          &:hover,
+          &:focus {
+            color: #ffc4c4;
+          }
+        }
 
-    &Img {
-      /* */
-      &--primary {
-        /* */
-      }
-
-      &--secondary {
-        /* */
+        p {
+          font-size: 1.2rem;
+          /* stylelint-disable-next-line no-descending-specificity */
+          > a {
+            text-decoration: underline;
+          }
+        }
       }
     }
   }
 
   &Works {
-    /* */
+    background-color: #fff7f7;
+
     &Item {
-      /* */
+      &:last-child {
+        margin-bottom: 50px;
+      }
       &Img {
         /* */
+        &Inner {
+          border-radius: 5px;
+        }
+
+        &--primary {
+          box-shadow:
+            1px 1px 10px rgba(0, 0, 0, 15%),
+            10px 10px 0 #53687e;
+        }
+
+        &--secondary {
+          box-shadow:
+            1px 1px 10px rgba(0, 0, 0, 15%),
+            10px 10px 0 #6b4e71;
+        }
       }
 
       &Text {
@@ -68,26 +111,94 @@
     &Addition {
       /* */
       &Skills {
-        /* */
+        & ul {
+          padding-left: 20px;
+          list-style: disc;
+        }
       }
 
       &Follow {
         /* */
+        &Icon {
+          color: #c2b2b4;
+        }
       }
     }
   }
 }
 
 .footer {
-  /* */
+  background-color: #3a4454;
+  color: #fff7f7;
+
   &Form {
-    /* */
+    & form {
+      width: 100%;
+    }
+
     &Input {
-      /* */
+      width: 100%;
+
+      position: relative;
+      &Icon {
+        position: absolute;
+        top: 12px;
+        left: 16px;
+        color: #fff7f7;
+      }
+
+      & input {
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid #c2b2b4;
+        border-radius: 5px;
+        color: #fff7f7;
+        padding: 10px 15px 10px 40px;
+
+        &::placeholder {
+          color: #9c9da5;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: rgba(0, 0, 0, 10%);
+        }
+
+        &:focus-visible {
+          outline: 1px solid #c2b2b4;
+          border: 1px solid #c2b2b4;
+        }
+      }
     }
 
     &TextArea {
-      /* */
+      width: 100%;
+
+      & textarea {
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid #c2b2b4;
+        border-radius: 5px;
+        color: #fff7f7;
+
+        height: 150px;
+        padding: 10px 15px;
+        resize: none;
+
+        &::placeholder {
+          color: #9c9da5;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: rgba(0, 0, 0, 10%);
+        }
+
+        &:focus-visible {
+          outline: 1px solid #c2b2b4;
+          border: 1px solid #c2b2b4;
+        }
+      }
     }
   }
 
@@ -97,6 +208,16 @@
       /* */
       &Menu {
         /* */
+        & a {
+          color: #fff7f7;
+          font-size: 1.2rem;
+          font-weight: 700;
+
+          &:hover,
+          &:focus {
+            color: #9c9da5;
+          }
+        }
       }
     }
 
@@ -106,26 +227,43 @@
 
     &Copy {
       /* */
+      color: #9c9da5;
     }
   }
 }
 
 .container {
-  /* */
-}
-
-.socialLinks {
-  /* */
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .button {
-  /* */
+  display: inline-block;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  color: #fff7f7;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: none;
+
   &--primary {
-    /* */
+    background-color: #53687e;
+
+    &:focus,
+    &:hover {
+      background-color: #495b6f;
+    }
   }
 
   &--secondary {
-    /* */
+    background: #6b4e71;
+
+    &:focus,
+    &:hover {
+      background-color: #5d4462;
+    }
   }
 }
 
@@ -138,5 +276,15 @@
 }
 
 .socialLinks {
-  /* */
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2rem;
+
+  // liの最初 以外
+  li + li {
+    margin-left: 20px;
+  }
+  // li:not(:last-child) {
+  //   margin-right: 20px;
+  // }
 }

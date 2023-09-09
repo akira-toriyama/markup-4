@@ -13,16 +13,16 @@
     align-items: center;
 
     &Title {
-      /* */
+      /* - */
     }
   }
 
   &Nav {
-    /* */
+    /* - */
     &Menu {
       display: flex;
 
-      /* */
+      /* - */
       &Item {
         > a {
           color: #fff7f7;
@@ -38,7 +38,7 @@
 }
 
 .main {
-  /* */
+  /* - */
   &Hero {
     background-color: #6b4e71;
 
@@ -49,6 +49,7 @@
         /* stylelint-disable-next-line no-descending-specificity */
         a {
           color: #fff7f7;
+
           &:hover,
           &:focus {
             color: #ffc4c4;
@@ -73,43 +74,44 @@
       &:last-child {
         margin-bottom: 50px;
       }
+
       &Img {
-        /* */
+        /* - */
         &Inner {
           border-radius: 5px;
         }
 
         &--primary {
           box-shadow:
-            1px 1px 10px rgba(0, 0, 0, 15%),
+            1px 1px 10px rgb(0 0 0 / 15%),
             10px 10px 0 #53687e;
         }
 
         &--secondary {
           box-shadow:
-            1px 1px 10px rgba(0, 0, 0, 15%),
+            1px 1px 10px rgb(0 0 0 / 15%),
             10px 10px 0 #6b4e71;
         }
       }
 
       &Text {
-        /* */
+        /* - */
       }
     }
   }
 
   &About {
-    /* */
+    /* - */
     &Img {
-      /* */
+      /* - */
     }
 
     &Description {
-      /* */
+      /* - */
     }
 
     &Addition {
-      /* */
+      /* - */
       &Skills {
         & ul {
           padding-left: 20px;
@@ -118,7 +120,7 @@
       }
 
       &Follow {
-        /* */
+        /* - */
         &Icon {
           color: #c2b2b4;
         }
@@ -138,8 +140,8 @@
 
     &Input {
       width: 100%;
-
       position: relative;
+
       &Icon {
         position: absolute;
         top: 12px;
@@ -161,7 +163,7 @@
 
         &:hover,
         &:focus {
-          background-color: rgba(0, 0, 0, 10%);
+          background-color: rgb(0 0 0 / 10%);
         }
 
         &:focus-visible {
@@ -180,7 +182,6 @@
         border: 1px solid #c2b2b4;
         border-radius: 5px;
         color: #fff7f7;
-
         height: 150px;
         padding: 10px 15px;
         resize: none;
@@ -191,7 +192,7 @@
 
         &:hover,
         &:focus {
-          background-color: rgba(0, 0, 0, 10%);
+          background-color: rgb(0 0 0 / 10%);
         }
 
         &:focus-visible {
@@ -203,11 +204,13 @@
   }
 
   &Info {
-    /* */
+    /* - */
     &Nav {
-      /* */
+      /* - */
       &Menu {
-        /* */
+        /* - */
+
+        /* stylelint-disable-next-line no-descending-specificity */
         & a {
           color: #fff7f7;
           font-size: 1.2rem;
@@ -222,11 +225,11 @@
     }
 
     &Follow {
-      /* */
+      /* - */
     }
 
     &Copy {
-      /* */
+      /* - */
       color: #9c9da5;
     }
   }
@@ -268,11 +271,11 @@
 }
 
 .mobile {
-  /* */
+  /* - */
 }
 
 .tabletAndUp {
-  /* */
+  /* - */
 }
 
 .socialLinks {

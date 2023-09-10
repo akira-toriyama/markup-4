@@ -17,7 +17,7 @@
     align-items: center;
 
     &Title {
-      /* - */
+      display: none;
     }
   }
 
@@ -28,6 +28,8 @@
 
       /* - */
       &Item {
+        margin-left: 20px;
+
         > a {
           color: #fff7f7;
 
@@ -45,6 +47,7 @@
   /* - */
   &Hero {
     background-color: #6b4e71;
+    padding: 100px 0 80px;
 
     &Highlight {
       color: #fff7f7;
@@ -62,6 +65,8 @@
 
         p {
           font-size: 1.2rem;
+          margin-bottom: 20px;
+
           /* stylelint-disable-next-line no-descending-specificity */
           > a {
             text-decoration: underline;
@@ -69,18 +74,26 @@
         }
       }
     }
+
+    &ImgWrapper {
+      display: none;
+    }
   }
 
   &Works {
     background-color: #fff7f7;
+    padding: 80px 0;
 
     &Item {
+      margin-bottom: 50px;
+
       &:last-child {
         margin-bottom: 50px;
       }
 
       &Img {
-        /* - */
+        margin-bottom: 40px;
+
         &Inner {
           border-radius: 5px;
         }
@@ -99,27 +112,47 @@
       }
 
       &Text {
-        /* - */
+        & p:last-of-type {
+          margin-bottom: 30px;
+        }
       }
     }
   }
 
   &About {
-    /* - */
+    padding: 80px 0 60px;
+
     &Img {
-      /* - */
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+
+      &--mobil {
+        border-radius: 50%;
+      }
+
+      &--tabletAndUp {
+        display: none;
+      }
     }
 
     &Description {
-      /* - */
+      margin-bottom: 30px;
     }
 
     &Addition {
       /* - */
       &Skills {
+        margin-bottom: 30px;
+
         & ul {
+          margin-bottom: 10px;
           padding-left: 20px;
           list-style: disc;
+        }
+
+        & li {
+          margin-bottom: 10px;
         }
       }
 
@@ -134,15 +167,19 @@
 }
 
 .footer {
+  padding: 60px 0 10px;
   background-color: #3a4454;
   color: #fff7f7;
 
   &Form {
+    margin-bottom: 80px;
+
     & form {
       width: 100%;
     }
 
     &Input {
+      margin-bottom: 10px;
       width: 100%;
       position: relative;
 
@@ -178,6 +215,7 @@
     }
 
     &TextArea {
+      margin-bottom: 20px;
       width: 100%;
 
       & textarea {
@@ -208,11 +246,23 @@
   }
 
   &Info {
-    /* - */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
     &Nav {
-      /* - */
+      margin-bottom: 40px;
+      display: flex;
+      align-items: baseline;
+
       &Menu {
-        /* - */
+        & ul {
+          display: flex;
+        }
+
+        & li {
+          margin-left: 20px;
+        }
 
         /* stylelint-disable-next-line no-descending-specificity */
         & a {
@@ -229,7 +279,7 @@
     }
 
     &Follow {
-      /* - */
+      margin-bottom: 40px;
     }
 
     &Copy {
@@ -278,14 +328,6 @@
   }
 }
 
-.mobile {
-  /* - */
-}
-
-.tabletAndUp {
-  /* - */
-}
-
 .socialLinks {
   display: flex;
   flex-wrap: wrap;
@@ -298,4 +340,8 @@
   // li:not(:last-child) {
   //   margin-right: 20px;
   // }
+
+  &Icon {
+    color: #c2b2b4;
+  }
 }

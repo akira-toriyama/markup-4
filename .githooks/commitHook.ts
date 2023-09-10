@@ -20,7 +20,13 @@ const scopeQ = () =>
   hoipoiCapsule.userInterface.prompt.Select.prompt({
     message: "Select scope.",
     search: true,
-    options: [{ name: "_", value: "_" }, line, { name: "main", value: "main" }],
+    options: [
+      { name: "_", value: "_" },
+      line,
+      { name: "general", value: "general" },
+      line,
+      { name: "main", value: "main" },
+    ],
   });
 
 const issueQ = () =>

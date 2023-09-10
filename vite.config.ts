@@ -44,6 +44,12 @@ export default defineConfig({
   resolve: {
     alias: {
       "~": path.join(__dirname, "./src"),
+
+      /**
+       * https://github.com/tajo/ladle/issues/100#issuecomment-1397392635
+       */
+      "next/original-image": require.resolve("next/image"),
+      "next/image": path.resolve(__dirname, "./.ladle/UnoptimizedImage.tsx"),
     },
   },
   server: {
@@ -59,4 +65,8 @@ export default defineConfig({
      */
     open: "none",
   },
+  /**
+   * https://github.com/tajo/ladle/issues/220
+   */
+  publicDir: "public",
 });

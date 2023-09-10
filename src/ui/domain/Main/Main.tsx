@@ -17,12 +17,13 @@ import {
 import NextImg from "next/image";
 import NextLink from "next/link";
 import { clsx } from "clsx";
+import { ResponsiveImg } from "~/ui/general/img/ResponsiveImg";
 
 export const Main: React.FC = () => (
   <>
     <header className={styles.header}>
       <div className={styles.headerLogo}>
-        <NextImg width={40} height={24.86} src="/image-logo.svg" alt="logo" />
+        <NextImg width={40} height={25} src="/image-logo.svg" alt="logo" />
         <span className={styles.headerLogoTitle}>Designer/Developer</span>
       </div>
       <div className={styles.headerNav}>
@@ -105,14 +106,33 @@ export const Main: React.FC = () => (
               </li>
             </ul>
           </div>
-          <figure>
+          {/* <figure>
             <NextImg
               src="/akira-toriyama.jpg"
               alt="profile"
               width={200}
               height={200}
             />
-          </figure>
+          </figure> */}
+
+          <ResponsiveImg
+            {...{
+              img: {
+                src: "/akira-toriyama.jpg",
+                alt: "profile",
+              },
+              width: {
+                s: "200px",
+                m: "200px",
+                l: "200px",
+              },
+              height: {
+                s: "200px",
+                m: "200px",
+                l: "200px",
+              },
+            }}
+          />
         </div>
       </section>
       <section id="about" className={styles.mainAbout}>
@@ -120,7 +140,7 @@ export const Main: React.FC = () => (
           <FontAwesomeIcon icon={faIcons} />
         </h2>
         <figure className={styles.mainAboutImg}>
-          <NextImg
+          {/* <NextImg
             alt="profile"
             src={"/akira-toriyama.jpg"}
             width={200}
@@ -128,12 +148,13 @@ export const Main: React.FC = () => (
             className={styles.mobile}
           />
           <NextImg
+            priority
             alt="about"
             src={"/image-about.jpg"}
             width={768}
             height={300}
             className={styles.tabletAndUp}
-          />
+          /> */}
         </figure>
 
         <div className={styles.container}>
@@ -267,7 +288,7 @@ export const Main: React.FC = () => (
           </div>
           <div className={styles.mainWorksItem}>
             <figure className={styles.mainWorksItemImg}>
-              <NextImg
+              {/* <NextImg
                 alt="Work B"
                 width={345}
                 height={230}
@@ -276,7 +297,7 @@ export const Main: React.FC = () => (
                   styles.mainWorksItemImgInner,
                   styles["mainWorksItemImg--secondary"],
                 )}
-              />
+              /> */}
             </figure>
             <div className={styles.mainWorksItemText}>
               <h3>過去のお仕事 2</h3>
@@ -332,12 +353,14 @@ export const Main: React.FC = () => (
         </div>
         <div className={styles.footerInfo}>
           <div className={styles.footerInfoNav}>
-            <NextImg
+            {/* <NextImg
               alt="logo"
               src="/image-logo.svg"
               width={60}
               height={37.3}
-            />
+            /> */}
+
+            {/* <Img2 /> */}
             <nav className={styles.footerInfoNavMenu}>
               <ul>
                 <li>

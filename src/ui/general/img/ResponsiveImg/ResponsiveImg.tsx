@@ -1,23 +1,30 @@
 import styles from "./styles.module.scss";
 import NextImg from "next/image";
+import { clsx } from "clsx";
 
+type Px = `${number}px`;
 type ResponsiveImg = {
-  img: Pick<React.ComponentProps<typeof NextImg>, "src" | "alt">;
+  img: {
+    className?: string;
+  } & Pick<React.ComponentProps<typeof NextImg>, "src" | "alt">;
+  wrapper?: {
+    className: string;
+  };
   width: {
-    s: `${number}px`;
-    m: `${number}px`;
-    l: `${number}px`;
+    s: Px;
+    m: Px;
+    l: Px;
   };
   height: {
-    s: `${number}px`;
-    m: `${number}px`;
-    l: `${number}px`;
+    s: Px;
+    m: Px;
+    l: Px;
   };
 };
 
 export const ResponsiveImg: React.FC<ResponsiveImg> = (props) => (
   <figure
-    className={styles.root}
+    className={clsx(styles.root, props.wrapper?.className)}
     style={
       {
         "--s-w": props.width.s,
@@ -36,6 +43,7 @@ export const ResponsiveImg: React.FC<ResponsiveImg> = (props) => (
         // https://github.com/vercel/next.js/discussions/40643
         sizes: "100%",
         style: { objectFit: "cover" },
+        className: props.img.className,
       }}
     />
   </figure>

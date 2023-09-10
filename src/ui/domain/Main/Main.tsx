@@ -14,7 +14,6 @@ import {
   faUser,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
-import NextImg from "next/image";
 import NextLink from "next/link";
 import { clsx } from "clsx";
 import { ResponsiveImg } from "~/ui/general/img/ResponsiveImg";
@@ -23,7 +22,24 @@ export const Main: React.FC = () => (
   <>
     <header className={styles.header}>
       <div className={styles.headerLogo}>
-        <NextImg width={40} height={25} src="/image-logo.svg" alt="logo" />
+        <ResponsiveImg
+          {...{
+            img: {
+              src: "/image-logo.svg",
+              alt: "logo",
+            },
+            width: {
+              s: "40px",
+              m: "40px",
+              l: "40px",
+            },
+            height: {
+              s: "25px",
+              m: "25px",
+              l: "25px",
+            },
+          }}
+        />
         <span className={styles.headerLogoTitle}>Designer/Developer</span>
       </div>
       <div className={styles.headerNav}>
@@ -71,55 +87,197 @@ export const Main: React.FC = () => (
               <li>
                 {/* TODO next link */}
                 <a href="" target="_blank">
-                  <FontAwesomeIcon color="white" size="sm" icon={faGithub} />
+                  <FontAwesomeIcon
+                    className={styles.socialLinksIcon}
+                    size="sm"
+                    icon={faGithub}
+                  />
                 </a>
               </li>
               <li>
                 {/* TODO next link */}
                 <a href="" target="_blank">
-                  <FontAwesomeIcon color="white" size="sm" icon={faDribbble} />
+                  <FontAwesomeIcon
+                    className={styles.socialLinksIcon}
+                    size="sm"
+                    icon={faDribbble}
+                  />
                 </a>
               </li>
               <li>
                 {/* TODO next link */}
                 <a href="" target="_blank">
-                  <FontAwesomeIcon color="white" size="sm" icon={faLinkedin} />
+                  <FontAwesomeIcon
+                    className={styles.socialLinksIcon}
+                    size="sm"
+                    icon={faLinkedin}
+                  />
                 </a>
               </li>
               <li>
                 {/* TODO next link */}
                 <a href="" target="_blank">
-                  <FontAwesomeIcon color="white" size="sm" icon={faMedium} />
+                  <FontAwesomeIcon
+                    className={styles.socialLinksIcon}
+                    size="sm"
+                    icon={faMedium}
+                  />
                 </a>
               </li>
               <li>
                 {/* TODO next link */}
                 <a href="" target="_blank">
-                  <FontAwesomeIcon color="white" size="sm" icon={faTwitter} />
+                  <FontAwesomeIcon
+                    className={styles.socialLinksIcon}
+                    size="sm"
+                    icon={faTwitter}
+                  />
                 </a>
               </li>
               <li>
                 {/* TODO next link */}
                 <a href="" target="_blank">
-                  <FontAwesomeIcon color="white" size="sm" icon={faYoutube} />
+                  <FontAwesomeIcon
+                    className={styles.socialLinksIcon}
+                    size="sm"
+                    icon={faYoutube}
+                  />
                 </a>
               </li>
             </ul>
           </div>
-          {/* <figure>
-            <NextImg
-              src="/akira-toriyama.jpg"
-              alt="profile"
-              width={200}
-              height={200}
+          <div className={styles.mainHeroImgWrapper}>
+            <ResponsiveImg
+              {...{
+                img: {
+                  src: "/akira-toriyama.jpg",
+                  alt: "profile",
+                },
+                width: {
+                  s: "200px",
+                  m: "200px",
+                  l: "200px",
+                },
+                height: {
+                  s: "200px",
+                  m: "200px",
+                  l: "200px",
+                },
+              }}
             />
-          </figure> */}
+          </div>
+        </div>
+      </section>
 
+      <section id="works" className={styles.mainWorks}>
+        <h2>
+          <FontAwesomeIcon icon={faPalette} />
+          Works
+        </h2>
+        <div className={styles.container}>
+          <div className={styles.mainWorksItem}>
+            <ResponsiveImg
+              {...{
+                img: {
+                  src: "/image-work-a3.jpg",
+                  alt: "Work A",
+                  className: clsx(
+                    styles.mainWorksItemImgInner,
+                    styles["mainWorksItemImg--primary"],
+                  ),
+                },
+                wrapper: {
+                  className: styles.mainWorksItemImg,
+                },
+                width: {
+                  s: "345px",
+                  m: "345px",
+                  l: "345px",
+                },
+                height: {
+                  s: "230px",
+                  m: "230px",
+                  l: "230px",
+                },
+              }}
+            />
+            <div className={styles.mainWorksItemText}>
+              <h3>過去のお仕事 1</h3>
+              <p>
+                この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+              </p>
+              <p>
+                この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+              </p>
+              {/* TODO next link */}
+              <a
+                href="work.html"
+                className={clsx(styles.button, styles["button--primary"])}
+              >
+                もっと読む
+              </a>
+            </div>
+          </div>
+          <div className={styles.mainWorksItem}>
+            <div className={styles.mainWorksItem}>
+              <ResponsiveImg
+                {...{
+                  img: {
+                    src: "/image-work-b.jpg",
+                    alt: "Work B",
+                    className: clsx(
+                      styles.mainWorksItemImgInner,
+                      styles["mainWorksItemImg--secondary"],
+                    ),
+                  },
+                  wrapper: {
+                    className: styles.mainWorksItemImg,
+                  },
+                  width: {
+                    s: "345px",
+                    m: "345px",
+                    l: "345px",
+                  },
+                  height: {
+                    s: "230px",
+                    m: "230px",
+                    l: "230px",
+                  },
+                }}
+              />
+            </div>
+            <div className={styles.mainWorksItemText}>
+              <h3>過去のお仕事 2</h3>
+              <p>
+                この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+              </p>
+              <p>
+                この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+              </p>
+              {/* TODO next link */}
+              <a
+                href="work.html"
+                className={clsx(styles.button, styles["button--secondary"])}
+              >
+                もっと読む
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" className={styles.mainAbout}>
+        <h2>
+          <FontAwesomeIcon icon={faIcons} />
+          About
+        </h2>
+
+        <div className={styles.mainAboutImg}>
           <ResponsiveImg
             {...{
               img: {
                 src: "/akira-toriyama.jpg",
                 alt: "profile",
+                className: styles["mainAboutImg--mobil"],
               },
               width: {
                 s: "200px",
@@ -134,28 +292,28 @@ export const Main: React.FC = () => (
             }}
           />
         </div>
-      </section>
-      <section id="about" className={styles.mainAbout}>
-        <h2>
-          <FontAwesomeIcon icon={faIcons} />
-        </h2>
-        <figure className={styles.mainAboutImg}>
-          {/* <NextImg
-            alt="profile"
-            src={"/akira-toriyama.jpg"}
-            width={200}
-            height={200}
-            className={styles.mobile}
-          />
-          <NextImg
-            priority
-            alt="about"
-            src={"/image-about.jpg"}
-            width={768}
-            height={300}
-            className={styles.tabletAndUp}
-          /> */}
-        </figure>
+
+        <ResponsiveImg
+          {...{
+            img: {
+              src: "/image-about.jpg",
+              alt: "profile",
+            },
+            wrapper: {
+              className: styles["mainAboutImg--tabletAndUp"],
+            },
+            width: {
+              s: "768px",
+              m: "768px",
+              l: "768px",
+            },
+            height: {
+              s: "300px",
+              m: "300px",
+              l: "300px",
+            },
+          }}
+        />
 
         <div className={styles.container}>
           <div className={styles.mainAboutDescription}>
@@ -249,75 +407,6 @@ export const Main: React.FC = () => (
           </div>
         </div>
       </section>
-      <section id="works" className={styles.mainWorks}>
-        <h2>
-          <FontAwesomeIcon icon={faPalette} />
-          Works
-        </h2>
-        <div className={styles.container}>
-          <div className={styles.mainWorksItem}>
-            <figure className={styles.mainWorksItemImg}>
-              <NextImg
-                alt="Work A"
-                width={345}
-                height={230}
-                src={"/image-work-a3.jpg"}
-                className={clsx(
-                  styles.mainWorksItemImgInner,
-                  styles["mainWorksItemImg--primary"],
-                )}
-              />
-            </figure>
-
-            <div className={styles.mainWorksItemText}>
-              <h3>過去のお仕事 1</h3>
-              <p>
-                この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
-              </p>
-              <p>
-                この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
-              </p>
-              {/* TODO next link */}
-              <a
-                href="work.html"
-                className={clsx(styles.button, styles["button--primary"])}
-              >
-                もっと読む
-              </a>
-            </div>
-          </div>
-          <div className={styles.mainWorksItem}>
-            <figure className={styles.mainWorksItemImg}>
-              {/* <NextImg
-                alt="Work B"
-                width={345}
-                height={230}
-                src={"/image-work-b.jpg"}
-                className={clsx(
-                  styles.mainWorksItemImgInner,
-                  styles["mainWorksItemImg--secondary"],
-                )}
-              /> */}
-            </figure>
-            <div className={styles.mainWorksItemText}>
-              <h3>過去のお仕事 2</h3>
-              <p>
-                この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
-              </p>
-              <p>
-                この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
-              </p>
-              {/* TODO next link */}
-              <a
-                href="work.html"
-                className={clsx(styles.button, styles["button--secondary"])}
-              >
-                もっと読む
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
     </main>
 
     <footer id="contact" className={styles.footer}>
@@ -351,16 +440,27 @@ export const Main: React.FC = () => (
             />
           </form>
         </div>
+
         <div className={styles.footerInfo}>
           <div className={styles.footerInfoNav}>
-            {/* <NextImg
-              alt="logo"
-              src="/image-logo.svg"
-              width={60}
-              height={37.3}
-            /> */}
-
-            {/* <Img2 /> */}
+            <ResponsiveImg
+              {...{
+                img: {
+                  src: "/image-logo.svg",
+                  alt: "logo",
+                },
+                width: {
+                  s: "60px",
+                  m: "60px",
+                  l: "60px",
+                },
+                height: {
+                  s: "38px",
+                  m: "38px",
+                  l: "38px",
+                },
+              }}
+            />
             <nav className={styles.footerInfoNavMenu}>
               <ul>
                 <li>
@@ -380,37 +480,61 @@ export const Main: React.FC = () => (
               <li>
                 {/* TODO NextLink */}
                 <a href="" target="_blank">
-                  <FontAwesomeIcon icon={faGithub} />
+                  <FontAwesomeIcon
+                    className={styles.socialLinksIcon}
+                    size="xs"
+                    icon={faGithub}
+                  />
                 </a>
               </li>
               <li>
                 {/* TODO NextLink */}
                 <a href="" target="_blank">
-                  <FontAwesomeIcon icon={faDribbble} />
+                  <FontAwesomeIcon
+                    className={styles.socialLinksIcon}
+                    size="xs"
+                    icon={faDribbble}
+                  />
                 </a>
               </li>
               <li>
                 {/* TODO NextLink */}
                 <a href="" target="_blank">
-                  <FontAwesomeIcon icon={faLinkedin} />
+                  <FontAwesomeIcon
+                    className={styles.socialLinksIcon}
+                    size="xs"
+                    icon={faLinkedin}
+                  />
                 </a>
               </li>
               <li>
                 {/* TODO NextLink */}
                 <a href="" target="_blank">
-                  <FontAwesomeIcon icon={faMedium} />
+                  <FontAwesomeIcon
+                    className={styles.socialLinksIcon}
+                    size="xs"
+                    icon={faMedium}
+                  />
                 </a>
               </li>
               <li>
                 {/* TODO NextLink */}
                 <a href="" target="_blank">
-                  <FontAwesomeIcon icon={faYoutube} />
+                  <FontAwesomeIcon
+                    className={styles.socialLinksIcon}
+                    size="xs"
+                    icon={faYoutube}
+                  />
                 </a>
               </li>
               <li>
                 {/* TODO NextLink */}
                 <a href="" target="_blank">
-                  <FontAwesomeIcon icon={faTwitter} />
+                  <FontAwesomeIcon
+                    className={styles.socialLinksIcon}
+                    size="xs"
+                    icon={faTwitter}
+                  />
                 </a>
               </li>
             </ul>

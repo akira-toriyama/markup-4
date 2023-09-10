@@ -1,0 +1,15 @@
+.root {
+  position: relative;
+  width: var(--s-w);
+  height: var(--s-h);
+
+  @media screen and (width >= 48em) and (width < 64em) {
+    width: var(--m-w);
+    height: var(--m-h);
+  }
+
+  @media screen and (width >= 64em) {
+    width: var(--l-w);
+    height: var(--l-h);
+  }
+}

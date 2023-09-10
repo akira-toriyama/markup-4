@@ -1,3 +1,4 @@
+import React from "react";
 import "normalize.css/normalize.css";
 import "./style.css";
 import type { GlobalProvider } from "@ladle/react";

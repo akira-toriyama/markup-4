@@ -28,7 +28,7 @@ dependencies:
     version: 3.3.1(react-hook-form@7.46.0)
   '@lukemorales/query-key-factory':
     specifier: 1.3.2
-    version: 1.3.2(@tanstack/query-core@4.33.0)(@tanstack/react-query@4.35.0)
+    version: 1.3.2(@tanstack/query-core@4.35.0)(@tanstack/react-query@4.35.0)
   '@next/font':
     specifier: 13.4.19
     version: 13.4.19
@@ -271,14 +271,6 @@ packages:
       node-fetch: 2.7.0
     transitivePeerDependencies:
       - encoding
-    dev: true
-
-  /@babel/code-frame@7.22.10:
-    resolution: {integrity: sha512-/KKIMG4UEL35WmI9OlvMhurwtytjvXoFcGNrOvyG9zIzA8YmPjVtIZUf7b05+TPO7G7/GEmLHDaoCgACHl9hhA==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/highlight': 7.22.13
-      chalk: 2.4.2
     dev: true
 
   /@babel/code-frame@7.22.13:
@@ -2177,7 +2169,7 @@ packages:
       react: '>=16.14.0'
       react-dom: '>=16.14.0'
     dependencies:
-      '@babel/code-frame': 7.22.10
+      '@babel/code-frame': 7.22.13
       '@babel/core': 7.22.11
       '@babel/generator': 7.22.15
       '@babel/parser': 7.22.15
@@ -2229,14 +2221,14 @@ packages:
       - terser
     dev: true
 
-  /@lukemorales/query-key-factory@1.3.2(@tanstack/query-core@4.33.0)(@tanstack/react-query@4.35.0):
+  /@lukemorales/query-key-factory@1.3.2(@tanstack/query-core@4.35.0)(@tanstack/react-query@4.35.0):
     resolution: {integrity: sha512-SFOWcB5ec+RhlKjLjZxTAbOPF2uXNED6lqXiMu3TUt2twKzxE/QLhnYkdbxOBMK5Wwc2Ia+WP3yqCPRKWywnwQ==}
     engines: {node: '>=14'}
     peerDependencies:
       '@tanstack/query-core': '>= 4.0.0'
       '@tanstack/react-query': '>= 4.0.0'
     dependencies:
-      '@tanstack/query-core': 4.33.0
+      '@tanstack/query-core': 4.35.0
       '@tanstack/react-query': 4.35.0(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
@@ -2831,10 +2823,6 @@ packages:
   /@swc/types@0.1.4:
     resolution: {integrity: sha512-z/G02d+59gyyUb7KYhKi9jOhicek6QD2oMaotUyG+lUkybpXoV49dY9bj7Ah5Q+y7knK2jU67UTX9FyfGzaxQg==}
     dev: true
-
-  /@tanstack/query-core@4.33.0:
-    resolution: {integrity: sha512-qYu73ptvnzRh6se2nyBIDHGBQvPY1XXl3yR769B7B6mIDD7s+EZhdlWHQ67JI6UOTFRaI7wupnTnwJ3gE0Mr/g==}
-    dev: false
 
   /@tanstack/query-core@4.35.0:
     resolution: {integrity: sha512-4GMcKQuLZQi6RFBiBZNsLhl+hQGYScRZ5ZoVq8QAzfqz9M7vcGin/2YdSESwl7WaV+Qzsb5CZOAbMBes4lNTnA==}

@@ -28,7 +28,7 @@ dependencies:
     version: 3.3.1(react-hook-form@7.46.0)
   '@lukemorales/query-key-factory':
     specifier: 1.3.2
-    version: 1.3.2(@tanstack/query-core@4.33.0)(@tanstack/react-query@4.35.0)
+    version: 1.3.2(@tanstack/query-core@4.35.0)(@tanstack/react-query@4.35.0)
   '@next/font':
     specifier: 13.4.19
     version: 13.4.19
@@ -2229,14 +2229,14 @@ packages:
       - terser
     dev: true
 
-  /@lukemorales/query-key-factory@1.3.2(@tanstack/query-core@4.33.0)(@tanstack/react-query@4.35.0):
+  /@lukemorales/query-key-factory@1.3.2(@tanstack/query-core@4.35.0)(@tanstack/react-query@4.35.0):
     resolution: {integrity: sha512-SFOWcB5ec+RhlKjLjZxTAbOPF2uXNED6lqXiMu3TUt2twKzxE/QLhnYkdbxOBMK5Wwc2Ia+WP3yqCPRKWywnwQ==}
     engines: {node: '>=14'}
     peerDependencies:
       '@tanstack/query-core': '>= 4.0.0'
       '@tanstack/react-query': '>= 4.0.0'
     dependencies:
-      '@tanstack/query-core': 4.33.0
+      '@tanstack/query-core': 4.35.0
       '@tanstack/react-query': 4.35.0(react-dom@18.2.0)(react@18.2.0)
     dev: false
 
@@ -2831,10 +2831,6 @@ packages:
   /@swc/types@0.1.4:
     resolution: {integrity: sha512-z/G02d+59gyyUb7KYhKi9jOhicek6QD2oMaotUyG+lUkybpXoV49dY9bj7Ah5Q+y7knK2jU67UTX9FyfGzaxQg==}
     dev: true
-
-  /@tanstack/query-core@4.33.0:
-    resolution: {integrity: sha512-qYu73ptvnzRh6se2nyBIDHGBQvPY1XXl3yR769B7B6mIDD7s+EZhdlWHQ67JI6UOTFRaI7wupnTnwJ3gE0Mr/g==}
-    dev: false
 
   /@tanstack/query-core@4.35.0:
     resolution: {integrity: sha512-4GMcKQuLZQi6RFBiBZNsLhl+hQGYScRZ5ZoVq8QAzfqz9M7vcGin/2YdSESwl7WaV+Qzsb5CZOAbMBes4lNTnA==}
@@ -3712,8 +3708,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /array.prototype.findlastindex@1.2.2:
-    resolution: {integrity: sha512-tb5thFFlUcp7NdNF6/MpDk/1r/4awWG1FIz3YqDf+/zJSTezBb+/5WViH41obXULHVpDzoiCLpJ/ZO9YbJMsdw==}
+  /array.prototype.findlastindex@1.2.3:
+    resolution: {integrity: sha512-LzLoiOMAxvy+Gd3BAq3B7VeIgPdo+Q8hthvKtXybMvRV0jrXfJM/t8mw7nNlpEcVlVUnCnM2KSX4XU5HmpodOA==}
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
@@ -5146,7 +5142,7 @@ packages:
     dependencies:
       '@typescript-eslint/parser': 6.4.0(eslint@8.48.0)(typescript@5.1.6)
       array-includes: 3.1.6
-      array.prototype.findlastindex: 1.2.2
+      array.prototype.findlastindex: 1.2.3
       array.prototype.flat: 1.3.2
       array.prototype.flatmap: 1.3.1
       debug: 3.2.7

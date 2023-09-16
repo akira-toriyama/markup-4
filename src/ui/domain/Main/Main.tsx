@@ -31,12 +31,12 @@ export const Main: React.FC = () => (
             width: {
               s: "40px",
               m: "60px",
-              l: "40px",
+              l: "60px",
             },
             height: {
               s: "25px",
               m: "37px",
-              l: "25px",
+              l: "37px",
             },
           }}
         />
@@ -146,6 +146,7 @@ export const Main: React.FC = () => (
               </li>
             </ul>
           </div>
+
           <div className={styles.mainHeroImgWrapper}>
             <ResponsiveImg
               {...{
@@ -459,12 +460,12 @@ export const Main: React.FC = () => (
                 width: {
                   s: "60px",
                   m: "60px",
-                  l: "60px",
+                  l: "110px",
                 },
                 height: {
                   s: "38px",
                   m: "38px",
-                  l: "38px",
+                  l: "69px",
                 },
               }}
             />

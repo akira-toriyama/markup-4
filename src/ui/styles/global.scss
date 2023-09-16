@@ -70,7 +70,22 @@ input[type="submit"]:hover {
 
 // tablet
 @media screen and (width >= 48em) and (width < 64em) {
-  // -
+  h1,
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  h1 {
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    margin-bottom: 60px;
+  }
+
+  h2 > i {
+    margin-right: 20px;
+  }
 }
 
 // sp

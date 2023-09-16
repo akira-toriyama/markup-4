@@ -30,12 +30,12 @@ export const Main: React.FC = () => (
             },
             width: {
               s: "40px",
-              m: "40px",
+              m: "60px",
               l: "40px",
             },
             height: {
               s: "25px",
-              m: "25px",
+              m: "37px",
               l: "25px",
             },
           }}
@@ -62,7 +62,7 @@ export const Main: React.FC = () => (
 
     <main id="home" className={styles.main}>
       <section className={styles.mainHero}>
-        <div className={styles.container}>
+        <div className={clsx(styles.container, styles.mainHeroContainer)}>
           <div className={styles.mainHeroHighlight}>
             <h1>
               I&apos;m <strong>Elle Kasai</strong>, a
@@ -152,15 +152,16 @@ export const Main: React.FC = () => (
                 img: {
                   src: "/akira-toriyama.jpg",
                   alt: "profile",
+                  className: styles["mainHeroImgWrapper--tablet"],
                 },
                 width: {
                   s: "200px",
-                  m: "200px",
+                  m: "255px",
                   l: "200px",
                 },
                 height: {
                   s: "200px",
-                  m: "200px",
+                  m: "255px",
                   l: "200px",
                 },
               }}
@@ -176,31 +177,34 @@ export const Main: React.FC = () => (
         </h2>
         <div className={styles.container}>
           <div className={styles.mainWorksItem}>
-            <ResponsiveImg
-              {...{
-                img: {
-                  src: "/image-work-a3.jpg",
-                  alt: "Work A",
-                  className: clsx(
-                    styles.mainWorksItemImgInner,
-                    styles["mainWorksItemImg--primary"],
-                  ),
-                },
-                wrapper: {
-                  className: styles.mainWorksItemImg,
-                },
-                width: {
-                  s: "345px",
-                  m: "345px",
-                  l: "345px",
-                },
-                height: {
-                  s: "230px",
-                  m: "230px",
-                  l: "230px",
-                },
-              }}
-            />
+            <div className={styles.mainWorksItemImgWrapper}>
+              <ResponsiveImg
+                {...{
+                  img: {
+                    src: "/image-work-a3.jpg",
+                    alt: "Work A",
+                    className: clsx(
+                      styles.mainWorksItemImgInner,
+                      styles["mainWorksItemImg--primary"],
+                    ),
+                  },
+                  wrapper: {
+                    className: styles.mainWorksItemImg,
+                  },
+                  width: {
+                    s: "335px",
+                    m: "315px",
+                    l: "335px",
+                  },
+                  height: {
+                    s: "230px",
+                    m: "220px",
+                    l: "230px",
+                  },
+                }}
+              />
+            </div>
+
             <div className={styles.mainWorksItemText}>
               <h3>過去のお仕事 1</h3>
               <p>
@@ -219,7 +223,7 @@ export const Main: React.FC = () => (
             </div>
           </div>
           <div className={styles.mainWorksItem}>
-            <div className={styles.mainWorksItem}>
+            <div className={styles.mainWorksItemImgWrapper}>
               <ResponsiveImg
                 {...{
                   img: {
@@ -234,9 +238,9 @@ export const Main: React.FC = () => (
                     className: styles.mainWorksItemImg,
                   },
                   width: {
-                    s: "345px",
-                    m: "345px",
-                    l: "345px",
+                    s: "335px",
+                    m: "335px",
+                    l: "335px",
                   },
                   height: {
                     s: "230px",
@@ -265,6 +269,7 @@ export const Main: React.FC = () => (
           </div>
         </div>
       </section>
+
       <section id="about" className={styles.mainAbout}>
         <h2>
           <FontAwesomeIcon icon={faIcons} />
@@ -279,6 +284,9 @@ export const Main: React.FC = () => (
                 alt: "profile",
                 className: styles["mainAboutImg--mobil"],
               },
+              wrapper: {
+                className: styles["mainAboutImg--me"],
+              },
               width: {
                 s: "200px",
                 m: "200px",
@@ -291,31 +299,30 @@ export const Main: React.FC = () => (
               },
             }}
           />
+          <ResponsiveImg
+            {...{
+              img: {
+                src: "/image-about.jpg",
+                alt: "profile",
+              },
+              wrapper: {
+                className: styles["mainAboutImg--about"],
+              },
+              width: {
+                s: "768px",
+                m: "768px",
+                l: "768px",
+              },
+              height: {
+                s: "300px",
+                m: "300px",
+                l: "300px",
+              },
+            }}
+          />
         </div>
 
-        <ResponsiveImg
-          {...{
-            img: {
-              src: "/image-about.jpg",
-              alt: "profile",
-            },
-            wrapper: {
-              className: styles["mainAboutImg--tabletAndUp"],
-            },
-            width: {
-              s: "768px",
-              m: "768px",
-              l: "768px",
-            },
-            height: {
-              s: "300px",
-              m: "300px",
-              l: "300px",
-            },
-          }}
-        />
-
-        <div className={styles.container}>
+        <div className={clsx(styles.container, styles.mainAboutContainer)}>
           <div className={styles.mainAboutDescription}>
             <h3>自己紹介</h3>
             <p>
@@ -410,7 +417,7 @@ export const Main: React.FC = () => (
     </main>
 
     <footer id="contact" className={styles.footer}>
-      <div className={styles.container}>
+      <div className={clsx(styles.container, styles.footerContainer)}>
         <div className={styles.footerForm}>
           <p>お仕事のご依頼やご相談等､お問い合わせはこちらからどうぞ｡</p>
           <form>

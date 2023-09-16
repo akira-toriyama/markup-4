@@ -3,6 +3,10 @@
     padding: 15px 20px;
   }
 
+  @media screen and (width >= 48em) and (width < 64em) {
+    padding: 20px 40px;
+  }
+
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -30,8 +34,16 @@
       &Item {
         margin-left: 20px;
 
+        @media screen and (width >= 48em) and (width < 64em) {
+          margin-left: 40px;
+        }
+
         > a {
           color: #fff7f7;
+
+          @media screen and (width >= 48em) and (width < 64em) {
+            font-size: 1.5rem;
+          }
 
           &:hover,
           &:focus {
@@ -49,8 +61,23 @@
     background-color: #6b4e71;
     padding: 100px 0 80px;
 
+    @media screen and (width >= 48em) and (width < 64em) {
+      padding: 140px 0 100px;
+    }
+
+    &Container {
+      @media screen and (width >= 48em) and (width < 64em) {
+        display: flex;
+        align-items: center;
+      }
+    }
+
     &Highlight {
       color: #fff7f7;
+
+      @media screen and (width >= 48em) and (width < 64em) {
+        width: 60%;
+      }
 
       &Links {
         /* stylelint-disable-next-line no-descending-specificity */
@@ -77,6 +104,15 @@
 
     &ImgWrapper {
       display: none;
+
+      @media screen and (width >= 48em) and (width < 64em) {
+        display: block;
+        padding-left: 40px;
+      }
+
+      &--tablet {
+        border-radius: 50%;
+      }
     }
   }
 
@@ -87,8 +123,25 @@
     &Item {
       margin-bottom: 50px;
 
+      @media screen and (width >= 48em) and (width < 64em) {
+        display: flex;
+        align-items: center;
+        margin: 0 -30px 50px;
+
+        &:nth-child(2) {
+          flex-direction: row-reverse;
+        }
+      }
+
       &:last-child {
         margin-bottom: 50px;
+      }
+
+      &ImgWrapper {
+        @media screen and (width >= 48em) and (width < 64em) {
+          width: 50%;
+          padding: 0 30px;
+        }
       }
 
       &Img {
@@ -112,6 +165,11 @@
       }
 
       &Text {
+        @media screen and (width >= 48em) and (width < 64em) {
+          width: 50%;
+          padding: 0 30px;
+        }
+
         & p:last-of-type {
           margin-bottom: 30px;
         }
@@ -122,6 +180,16 @@
   &About {
     padding: 80px 0 60px;
 
+    @media screen and (width >= 48em) and (width < 64em) {
+      padding: 100px 0;
+    }
+
+    &Container {
+      @media screen and (width >= 48em) and (width < 64em) {
+        display: flex;
+      }
+    }
+
     &Img {
       display: flex;
       justify-content: center;
@@ -131,17 +199,38 @@
         border-radius: 50%;
       }
 
-      &--tabletAndUp {
+      &--me {
         display: none;
+
+        @media screen and (width < 48em) {
+          display: block;
+        }
+      }
+
+      &--about {
+        display: block;
+
+        @media screen and (width < 48em) {
+          display: none;
+        }
       }
     }
 
     &Description {
       margin-bottom: 30px;
+
+      @media screen and (width >= 48em) and (width < 64em) {
+        width: 50%;
+        margin-right: 50px;
+        margin-bottom: 0;
+      }
     }
 
     &Addition {
-      /* - */
+      @media screen and (width >= 48em) and (width < 64em) {
+        width: 50%;
+      }
+
       &Skills {
         margin-bottom: 30px;
 
@@ -171,8 +260,26 @@
   background-color: #3a4454;
   color: #fff7f7;
 
+  @media screen and (width >= 48em) and (width < 64em) {
+    padding: 100px 0;
+  }
+
+  &Container {
+    @media screen and (width >= 48em) and (width < 64em) {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  }
+
   &Form {
     margin-bottom: 80px;
+
+    @media screen and (width >= 48em) and (width < 64em) {
+      width: 50%;
+      margin-bottom: 0;
+    }
 
     & form {
       width: 100%;
@@ -218,6 +325,10 @@
       margin-bottom: 20px;
       width: 100%;
 
+      @media screen and (width >= 48em) and (width < 64em) {
+        margin-bottom: 30px;
+      }
+
       & textarea {
         width: 100%;
         background-color: transparent;
@@ -250,6 +361,12 @@
     align-items: center;
     flex-direction: column;
 
+    @media screen and (width >= 48em) and (width < 64em) {
+      width: 50%;
+      align-items: flex-start;
+      margin-top: 0;
+    }
+
     &Nav {
       margin-bottom: 40px;
       display: flex;
@@ -280,11 +397,18 @@
 
     &Follow {
       margin-bottom: 40px;
+
+      @media screen and (width >= 48em) and (width < 64em) {
+        margin-bottom: 140px;
+      }
     }
 
     &Copy {
-      /* - */
       color: #9c9da5;
+
+      @media screen and (width >= 48em) and (width < 64em) {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -295,6 +419,10 @@
 
   @media screen and (width < 48em) {
     padding: 0 20px;
+  }
+
+  @media screen and (width >= 48em) and (width < 64em) {
+    padding: 0 40px;
   }
 }
 

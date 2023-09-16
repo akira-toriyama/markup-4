@@ -1,4 +1,6 @@
-# [HTML/CSSブロックコーディング デザインをすらすら再現できる](https://www.amazon.co.jp/gp/product/B0BHYYSWYQ/ref=ppx_yo_dt_b_d_asin_title_o00?ie=UTF8&psc=1)
+## App
+
+https://markup-4.vercel.app
 
 ## デザイン
 
@@ -19,6 +21,7 @@ State管理などはないですが、デファクトスタンダードなので
 ### スタイルは、scssを使用
 
 [`happy-css-modules`](https://github.com/mizdra/happy-css-modules)を使用して型のを生成しました。
+規模を考慮してscssは、変数や抽象化をしていません。
 
 #### メリット
 

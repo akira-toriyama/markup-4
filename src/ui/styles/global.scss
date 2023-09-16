@@ -63,12 +63,18 @@ input[type="submit"]:hover {
   cursor: pointer;
 }
 
-// pc
 @media screen and (width >= 64em) {
-  // -
+  h1,
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
 }
 
-// tablet
 @media screen and (width >= 48em) and (width < 64em) {
   h1,
   h2 {
@@ -88,7 +94,6 @@ input[type="submit"]:hover {
   }
 }
 
-// sp
 @media screen and (width < 48em) {
   h1,
   h2 {

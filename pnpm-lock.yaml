@@ -164,8 +164,8 @@ devDependencies:
     specifier: 2.1.2
     version: 2.1.2(postcss@8.4.29)(sass@1.67.0)(ts-node@10.9.1)
   jscpd:
-    specifier: 3.5.9
-    version: 3.5.9
+    specifier: 3.5.10
+    version: 3.5.10
   jsdom:
     specifier: 22.1.0
     version: 22.1.0
@@ -243,7 +243,7 @@ packages:
     dependencies:
       '@babel/core': 7.22.20
       '@babel/generator': 7.22.15
-      '@babel/parser': 7.22.15
+      '@babel/parser': 7.22.16
       '@babel/runtime': 7.22.15
       '@babel/traverse': 7.22.15
       '@babel/types': 7.22.19
@@ -815,7 +815,7 @@ packages:
       '@babel/helper-function-name': 7.22.5
       '@babel/helper-hoist-variables': 7.22.5
       '@babel/helper-split-export-declaration': 7.22.6
-      '@babel/parser': 7.22.15
+      '@babel/parser': 7.22.16
       '@babel/types': 7.22.19
       debug: 4.3.4
       globals: 11.12.0
@@ -1795,7 +1795,7 @@ packages:
       graphql: ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
     dependencies:
       '@babel/core': 7.22.20
-      '@babel/parser': 7.22.15
+      '@babel/parser': 7.22.16
       '@babel/plugin-syntax-import-assertions': 7.22.5(@babel/core@7.22.20)
       '@babel/traverse': 7.22.15
       '@babel/types': 7.22.19
@@ -2169,8 +2169,8 @@ packages:
       pug: 3.0.2
     dev: true
 
-  /@jscpd/html-reporter@3.5.9:
-    resolution: {integrity: sha512-Q2hu3B2/lCgzQvVHvdZUl2IrmXRKP08zH9xvsaDERPWjaYkWQi6FWNqOnkryMD0cl/hrXBKpx050IUUO7FmACw==}
+  /@jscpd/html-reporter@3.5.10:
+    resolution: {integrity: sha512-EPee/YSy/12UboUOoOD+vFvU8/Bi/CAKnjTDnAdPnJlSh68jog/BNhHKrXiiJKZS2CLn1WzjUaefJrn8VcWo+A==}
     dependencies:
       '@jscpd/finder': 3.5.10
       colors: 1.4.0
@@ -4440,7 +4440,7 @@ packages:
   /constantinople@4.0.1:
     resolution: {integrity: sha512-vCrqcSIq4//Gx74TXXCGnHpulY1dskqLTFGDmhrGxzeXL8lF8kvXv6mpNWlJj1uD4DW23D4ljAqbY4RRaaUZIw==}
     dependencies:
-      '@babel/parser': 7.22.15
+      '@babel/parser': 7.22.16
       '@babel/types': 7.22.19
     dev: true
 
@@ -6928,7 +6928,7 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       '@babel/core': 7.22.20
-      '@babel/parser': 7.22.15
+      '@babel/parser': 7.22.16
       '@istanbuljs/schema': 0.1.3
       istanbul-lib-coverage: 3.2.0
       semver: 7.5.4
@@ -7016,13 +7016,13 @@ packages:
       argparse: 2.0.1
     dev: true
 
-  /jscpd@3.5.9:
-    resolution: {integrity: sha512-8JJUHVBlnxdU/Hp+ZgctlUaMkAU4yqJ0Cfb+SYMSUihR96idyLg17tJDP6STFpkFVfU4/HLB1LHfeSGp38zVuA==}
+  /jscpd@3.5.10:
+    resolution: {integrity: sha512-lsFBSqtmGocMtF8NuCh867VRhjeSvPlGit7FYA9a9bX3GFoV65djHnWMbIWfHLb/6wCCwllmXaHuMgeMuhqo3Q==}
     hasBin: true
     dependencies:
       '@jscpd/core': 3.5.4
       '@jscpd/finder': 3.5.10
-      '@jscpd/html-reporter': 3.5.9
+      '@jscpd/html-reporter': 3.5.10
       '@jscpd/tokenizer': 3.5.4
       colors: 1.4.0
       commander: 5.1.0
@@ -11208,7 +11208,7 @@ packages:
     resolution: {integrity: sha512-RNGKj82nUPg3g5ygxkQl0R937xLyho1J24ItRCBTr/m1YnZkzJy1hUiHUJrc/VlsDQzsCnInEGSg3bci0Lmd4w==}
     engines: {node: '>= 10.0.0'}
     dependencies:
-      '@babel/parser': 7.22.15
+      '@babel/parser': 7.22.16
       '@babel/types': 7.22.19
       assert-never: 1.2.1
       babel-walk: 3.0.0-canary-5

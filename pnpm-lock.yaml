@@ -49,7 +49,7 @@ dependencies:
     version: 1.3.0(typescript@5.2.2)
   next:
     specifier: 13.5.2
-    version: 13.5.2(@babel/core@7.22.20)(react-dom@18.2.0)(react@18.2.0)(sass@1.67.0)
+    version: 13.5.2(@babel/core@7.22.20)(react-dom@18.2.0)(react@18.2.0)(sass@1.68.0)
   nextjs-progressbar:
     specifier: 0.0.16
     version: 0.0.16(next@13.5.2)(react@18.2.0)
@@ -108,7 +108,7 @@ devDependencies:
     version: 10.0.0(graphql@16.8.0)
   '@ladle/react':
     specifier: 2.17.2
-    version: 2.17.2(@types/node@20.5.7)(react-dom@18.2.0)(react@18.2.0)(sass@1.67.0)
+    version: 2.17.2(@types/node@20.5.7)(react-dom@18.2.0)(react@18.2.0)(sass@1.68.0)
   '@playwright/test':
     specifier: 1.38.0
     version: 1.38.0
@@ -162,7 +162,7 @@ devDependencies:
     version: 4.0.4(graphql@16.8.0)
   happy-css-modules:
     specifier: 2.1.2
-    version: 2.1.2(postcss@8.4.29)(sass@1.67.0)(ts-node@10.9.1)
+    version: 2.1.2(postcss@8.4.29)(sass@1.68.0)(ts-node@10.9.1)
   jscpd:
     specifier: 3.5.10
     version: 3.5.10
@@ -182,8 +182,8 @@ devDependencies:
     specifier: 3.0.3
     version: 3.0.3
   sass:
-    specifier: 1.67.0
-    version: 1.67.0
+    specifier: 1.68.0
+    version: 1.68.0
   start-server-and-test:
     specifier: 2.0.0
     version: 2.0.0
@@ -216,10 +216,10 @@ devDependencies:
     version: 5.2.2
   vite:
     specifier: 4.4.9
-    version: 4.4.9(@types/node@20.5.7)(sass@1.67.0)
+    version: 4.4.9(@types/node@20.5.7)(sass@1.68.0)
   vitest:
     specifier: 0.34.4
-    version: 0.34.4(jsdom@22.1.0)(sass@1.67.0)
+    version: 0.34.4(jsdom@22.1.0)(sass@1.68.0)
 
 packages:
 
@@ -2196,7 +2196,7 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: true
 
-  /@ladle/react@2.17.2(@types/node@20.5.7)(react-dom@18.2.0)(react@18.2.0)(sass@1.67.0):
+  /@ladle/react@2.17.2(@types/node@20.5.7)(react-dom@18.2.0)(react@18.2.0)(sass@1.68.0):
     resolution: {integrity: sha512-xKX8LubIweKn4p6v8E6F0JO0N7SBhyH9JoQz0qhlBg87UxFO9eBrHVfbx+0Jtdh1viaysVdSz4OAAEnV8nrgsQ==}
     engines: {node: '>=16.0.0'}
     hasBin: true
@@ -2242,7 +2242,7 @@ packages:
       remark-gfm: 3.0.1
       source-map: 0.7.4
       vfile: 6.0.1
-      vite: 4.4.9(@types/node@20.5.7)(sass@1.67.0)
+      vite: 4.4.9(@types/node@20.5.7)(sass@1.68.0)
       vite-tsconfig-paths: 3.6.0(vite@4.4.9)
     transitivePeerDependencies:
       - '@swc/helpers'
@@ -3384,7 +3384,7 @@ packages:
       vite: ^4
     dependencies:
       '@swc/core': 1.3.85
-      vite: 4.4.9(@types/node@20.5.7)(sass@1.67.0)
+      vite: 4.4.9(@types/node@20.5.7)(sass@1.68.0)
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
@@ -3400,7 +3400,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.22.5(@babel/core@7.22.20)
       magic-string: 0.27.0
       react-refresh: 0.14.0
-      vite: 4.4.9(@types/node@20.5.7)(sass@1.67.0)
+      vite: 4.4.9(@types/node@20.5.7)(sass@1.68.0)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3415,7 +3415,7 @@ packages:
       '@babel/plugin-transform-react-jsx-self': 7.22.5(@babel/core@7.22.20)
       '@babel/plugin-transform-react-jsx-source': 7.22.5(@babel/core@7.22.20)
       react-refresh: 0.14.0
-      vite: 4.4.9(@types/node@20.5.7)(sass@1.67.0)
+      vite: 4.4.9(@types/node@20.5.7)(sass@1.68.0)
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -3432,7 +3432,7 @@ packages:
       istanbul-reports: 3.1.6
       picocolors: 1.0.0
       test-exclude: 6.0.0
-      vitest: 0.34.4(jsdom@22.1.0)(sass@1.67.0)
+      vitest: 0.34.4(jsdom@22.1.0)(sass@1.68.0)
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5296,8 +5296,8 @@ packages:
     dependencies:
       '@typescript-eslint/utils': 6.4.0(eslint@8.49.0)(typescript@5.2.2)
       eslint: 8.49.0
-      vite: 4.4.9(@types/node@20.5.7)(sass@1.67.0)
-      vitest: 0.34.4(jsdom@22.1.0)(sass@1.67.0)
+      vite: 4.4.9(@types/node@20.5.7)(sass@1.68.0)
+      vitest: 0.34.4(jsdom@22.1.0)(sass@1.68.0)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -6145,7 +6145,7 @@ packages:
     resolution: {integrity: sha512-0oKGaR+y3qcS5mCu1vb7KG+a89vjn06C7Ihq/dDl3jA+A8B3TKomvi3CiEcVLJQGalbu8F52LxkOym7U5sSfbg==}
     engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
 
-  /happy-css-modules@2.1.2(postcss@8.4.29)(sass@1.67.0)(ts-node@10.9.1):
+  /happy-css-modules@2.1.2(postcss@8.4.29)(sass@1.68.0)(ts-node@10.9.1):
     resolution: {integrity: sha512-wRiJaJ6AYGdMrDDuuxNKzKwmCHF9UxJQlYtiGsKj57hs9ifGA0sUiquyM+r/tkt6/Kr+sVPAgIZxVPc0jYU0SQ==}
     engines: {node: '>=16.0.0'}
     hasBin: true
@@ -6174,7 +6174,7 @@ packages:
       postcss-modules: 4.3.1(postcss@8.4.29)
       postcss-selector-parser: 6.0.13
       postcss-value-parser: 4.2.0
-      sass: 1.67.0
+      sass: 1.68.0
       source-map: 0.7.4
       yargs: 17.7.2
     transitivePeerDependencies:
@@ -8222,7 +8222,7 @@ packages:
     engines: {node: '>= 0.6'}
     dev: true
 
-  /next@13.5.2(@babel/core@7.22.20)(react-dom@18.2.0)(react@18.2.0)(sass@1.67.0):
+  /next@13.5.2(@babel/core@7.22.20)(react-dom@18.2.0)(react@18.2.0)(sass@1.68.0):
     resolution: {integrity: sha512-vog4UhUaMYAzeqfiAAmgB/QWLW7p01/sg+2vn6bqc/CxHFYizMzLv6gjxKzl31EVFkfl/F+GbxlKizlkTE9RdA==}
     engines: {node: '>=16.14.0'}
     hasBin: true
@@ -8244,7 +8244,7 @@ packages:
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      sass: 1.67.0
+      sass: 1.68.0
       styled-jsx: 5.1.1(@babel/core@7.22.20)(react@18.2.0)
       watchpack: 2.4.0
       zod: 3.21.4
@@ -8270,7 +8270,7 @@ packages:
       react: '>= 16.0.0'
     dependencies:
       '@types/nprogress': 0.2.0
-      next: 13.5.2(@babel/core@7.22.20)(react-dom@18.2.0)(react@18.2.0)(sass@1.67.0)
+      next: 13.5.2(@babel/core@7.22.20)(react-dom@18.2.0)(react@18.2.0)(sass@1.68.0)
       nprogress: 0.2.0
       prop-types: 15.8.1
       react: 18.2.0
@@ -9594,8 +9594,8 @@ packages:
   /safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  /sass@1.67.0:
-    resolution: {integrity: sha512-SVrO9ZeX/QQyEGtuZYCVxoeAL5vGlYjJ9p4i4HFuekWl8y/LtJ7tJc10Z+ck1c8xOuoBm2MYzcLfTAffD0pl/A==}
+  /sass@1.68.0:
+    resolution: {integrity: sha512-Lmj9lM/fef0nQswm1J2HJcEsBUba4wgNx2fea6yJHODREoMFnwRpZydBnX/RjyXw2REIwdkbqE4hrTo4qfDBUA==}
     engines: {node: '>=14.0.0'}
     hasBin: true
     dependencies:
@@ -10888,7 +10888,7 @@ packages:
       vfile-message: 4.0.2
     dev: true
 
-  /vite-node@0.34.4(@types/node@20.5.7)(sass@1.67.0):
+  /vite-node@0.34.4(@types/node@20.5.7)(sass@1.68.0):
     resolution: {integrity: sha512-ho8HtiLc+nsmbwZMw8SlghESEE3KxJNp04F/jPUCLVvaURwt0d+r9LxEqCX5hvrrOQ0GSyxbYr5ZfRYhQ0yVKQ==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -10898,7 +10898,7 @@ packages:
       mlly: 1.4.1
       pathe: 1.1.1
       picocolors: 1.0.0
-      vite: 4.4.9(@types/node@20.5.7)(sass@1.67.0)
+      vite: 4.4.9(@types/node@20.5.7)(sass@1.68.0)
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -10919,12 +10919,12 @@ packages:
       globrex: 0.1.2
       recrawl-sync: 2.2.3
       tsconfig-paths: 4.2.0
-      vite: 4.4.9(@types/node@20.5.7)(sass@1.67.0)
+      vite: 4.4.9(@types/node@20.5.7)(sass@1.68.0)
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite@4.4.9(@types/node@20.5.7)(sass@1.67.0):
+  /vite@4.4.9(@types/node@20.5.7)(sass@1.68.0):
     resolution: {integrity: sha512-2mbUn2LlUmNASWwSCNSJ/EG2HuSRTnVNaydp6vMCm5VIqJsjMfbIWtbH2kDuwUVW5mMUKKZvGPX/rqeqVvv1XA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -10956,11 +10956,11 @@ packages:
       esbuild: 0.18.20
       postcss: 8.4.29
       rollup: 3.29.1
-      sass: 1.67.0
+      sass: 1.68.0
     optionalDependencies:
       fsevents: 2.3.3
 
-  /vitest@0.34.4(jsdom@22.1.0)(sass@1.67.0):
+  /vitest@0.34.4(jsdom@22.1.0)(sass@1.68.0):
     resolution: {integrity: sha512-SE/laOsB6995QlbSE6BtkpXDeVNLJc1u2LHRG/OpnN4RsRzM3GQm4nm3PQCK5OBtrsUqnhzLdnT7se3aeNGdlw==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -11013,8 +11013,8 @@ packages:
       strip-literal: 1.3.0
       tinybench: 2.5.1
       tinypool: 0.7.0
-      vite: 4.4.9(@types/node@20.5.7)(sass@1.67.0)
-      vite-node: 0.34.4(@types/node@20.5.7)(sass@1.67.0)
+      vite: 4.4.9(@types/node@20.5.7)(sass@1.68.0)
+      vite-node: 0.34.4(@types/node@20.5.7)(sass@1.68.0)
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
       - less

@@ -128,8 +128,8 @@ devDependencies:
     specifier: 18.2.22
     version: 18.2.22
   '@types/sync-fetch':
-    specifier: 0.4.0
-    version: 0.4.0
+    specifier: 0.4.1
+    version: 0.4.1
   '@vitest/coverage-istanbul':
     specifier: 0.34.4
     version: 0.34.4(vitest@0.34.4)
@@ -3165,8 +3165,8 @@ packages:
     resolution: {integrity: sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==}
     dev: true
 
-  /@types/sync-fetch@0.4.0:
-    resolution: {integrity: sha512-kUhMgk1Es/vKdwC27O29j2Y3KM52Z/k1c1sBUfNJoI8fr0WNRRFaMmq7oJ18xkiN08cNBsgNA86CV030JthgOA==}
+  /@types/sync-fetch@0.4.1:
+    resolution: {integrity: sha512-M6YXEkVtFtKlDk9uu3PYNFQ2x4yACR0c86x1kzONJrRdGotKDSp1+33IbNYat65OEonRs7zSttIa3SFNkYw1Ng==}
     dependencies:
       '@types/node-fetch': 2.6.5
     dev: true

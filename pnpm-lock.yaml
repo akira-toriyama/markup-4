@@ -2432,8 +2432,8 @@ packages:
       react-transition-group: 4.4.5(react-dom@18.2.0)(react@18.2.0)
     dev: true
 
-  /@mui/private-theming@5.14.8(@types/react@18.2.23)(react@18.2.0):
-    resolution: {integrity: sha512-iBzpcl3Mh92XaYpYPdgzzRxNGkjpoDz8rf8/q5m+EBPowFEHV+CCS9hC0Q2pOKLW3VFFikA7w/GHt7n++40JGQ==}
+  /@mui/private-theming@5.14.11(@types/react@18.2.23)(react@18.2.0):
+    resolution: {integrity: sha512-MSnNNzTu9pfKLCKs1ZAKwOTgE4bz+fQA0fNr8Jm7NDmuWmw0CaN9Vq2/MHsatE7+S0A25IAKby46Uv1u53rKVQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       '@types/react': ^17.0.0 || ^18.0.0
@@ -2490,7 +2490,7 @@ packages:
       '@babel/runtime': 7.22.15
       '@emotion/react': 11.10.5(@babel/core@7.22.20)(@types/react@18.2.23)(react@18.2.0)
       '@emotion/styled': 11.10.5(@babel/core@7.22.20)(@emotion/react@11.10.5)(@types/react@18.2.23)(react@18.2.0)
-      '@mui/private-theming': 5.14.8(@types/react@18.2.23)(react@18.2.0)
+      '@mui/private-theming': 5.14.11(@types/react@18.2.23)(react@18.2.0)
       '@mui/styled-engine': 5.14.9(@emotion/react@11.10.5)(@emotion/styled@11.10.5)(react@18.2.0)
       '@mui/types': 7.2.4(@types/react@18.2.23)
       '@mui/utils': 5.14.11(@types/react@18.2.23)(react@18.2.0)

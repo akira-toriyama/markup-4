@@ -1242,8 +1242,8 @@ packages:
       eslint-visitor-keys: 3.4.3
     dev: true
 
-  /@eslint-community/regexpp@4.8.0:
-    resolution: {integrity: sha512-JylOEEzDiOryeUnFbQz+oViCXS0KsvR1mvHkoMiu5+UiBvy+RYX7tzlIIIEstF/gVa2tj9AQXk3dgnxv6KxhFg==}
+  /@eslint-community/regexpp@4.9.0:
+    resolution: {integrity: sha512-zJmuCWj2VLBt4c25CfBIbMZLGLyhkvs7LznyVX5HfpzeocThgIj5XQK4L+g3U36mMcx8bPMhGyPpwCATamC4jQ==}
     engines: {node: ^12.0.0 || ^14.0.0 || >=16.0.0}
     dev: true
 
@@ -3172,7 +3172,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@eslint-community/regexpp': 4.8.0
+      '@eslint-community/regexpp': 4.9.0
       '@typescript-eslint/parser': 6.4.0(eslint@8.49.0)(typescript@5.2.2)
       '@typescript-eslint/scope-manager': 6.4.0
       '@typescript-eslint/type-utils': 6.4.0(eslint@8.49.0)(typescript@5.2.2)
@@ -5306,7 +5306,7 @@ packages:
     hasBin: true
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.49.0)
-      '@eslint-community/regexpp': 4.8.0
+      '@eslint-community/regexpp': 4.9.0
       '@eslint/eslintrc': 2.1.2
       '@eslint/js': 8.49.0
       '@humanwhocodes/config-array': 0.11.11

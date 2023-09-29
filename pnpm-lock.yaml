@@ -494,7 +494,7 @@ packages:
       '@babel/helper-compilation-targets': 7.22.15
       '@babel/helper-plugin-utils': 7.22.5
       '@babel/plugin-syntax-object-rest-spread': 7.8.3(@babel/core@7.22.20)
-      '@babel/plugin-transform-parameters': 7.22.5(@babel/core@7.22.20)
+      '@babel/plugin-transform-parameters': 7.22.15(@babel/core@7.22.20)
     dev: true
 
   /@babel/plugin-syntax-class-properties@7.12.13(@babel/core@7.22.20):
@@ -690,8 +690,8 @@ packages:
       '@babel/helper-replace-supers': 7.22.9(@babel/core@7.22.20)
     dev: true
 
-  /@babel/plugin-transform-parameters@7.22.5(@babel/core@7.22.20):
-    resolution: {integrity: sha512-AVkFUBurORBREOmHRKo06FjHYgjrabpdqRSwq6+C7R5iTCZOsM4QbcB27St0a4U6fffyAOqh3s/qEfybAhfivg==}
+  /@babel/plugin-transform-parameters@7.22.15(@babel/core@7.22.20):
+    resolution: {integrity: sha512-hjk7qKIqhyzhhUvRT683TYQOFa/4cQKwQy7ALvTpODswN40MljzNDa0YldevS6tGbxwaEKVn502JmY0dP7qEtQ==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -3945,7 +3945,7 @@ packages:
       '@babel/plugin-transform-member-expression-literals': 7.22.5(@babel/core@7.22.20)
       '@babel/plugin-transform-modules-commonjs': 7.22.5(@babel/core@7.22.20)
       '@babel/plugin-transform-object-super': 7.22.5(@babel/core@7.22.20)
-      '@babel/plugin-transform-parameters': 7.22.5(@babel/core@7.22.20)
+      '@babel/plugin-transform-parameters': 7.22.15(@babel/core@7.22.20)
       '@babel/plugin-transform-property-literals': 7.22.5(@babel/core@7.22.20)
       '@babel/plugin-transform-react-display-name': 7.22.5(@babel/core@7.22.20)
       '@babel/plugin-transform-react-jsx': 7.22.15(@babel/core@7.22.20)
